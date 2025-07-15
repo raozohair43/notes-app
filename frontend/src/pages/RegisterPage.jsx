@@ -13,7 +13,7 @@ function RegisterPage() {
     setLoading(true);
     setError(null);
     try {
-      const res = await fetch(`${API_URL}/auth/register`, {
+      const res = await fetch(`https://notes-app-7ytd.onrender.com/auth/register`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ username, email, password }),
