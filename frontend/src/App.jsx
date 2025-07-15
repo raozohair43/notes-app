@@ -22,7 +22,7 @@ function App() {
   // Handle logout
   const handleLogout = async () => {
     try {
-      const res = await fetch('http://localhost:5000/api/auth/logout', {
+      const res = await fetch('https://notes-app-7ytd.onrender.com/auth/logout', {
         method: 'POST',
         credentials: 'include'
       });
