@@ -22,7 +22,7 @@ function App() {
   // Handle logout
   const handleLogout = async () => {
     try {
-      const res = await fetch('https://notes-app-7ytd.onrender.com/auth/logout', {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/auth/logout`, {
         method: 'POST',
         credentials: 'include'
       });
